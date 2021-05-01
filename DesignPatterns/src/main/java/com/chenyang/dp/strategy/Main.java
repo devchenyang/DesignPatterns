@@ -9,7 +9,11 @@ public class Main {
 //        Dog[] a = {new Dog(3), new Dog(5), new Dog(1)};
 //        Sorter<Dog> sorter = new Sorter<>();
         Sorter<Cat> sorter = new Sorter<>();
-        sorter.sort(a, new CatHeightComparator());
+        sorter.sort(a, ((o1, o2) -> {
+            if (o1.getHeight() > o2.getHeight()) return 1;
+            if (o1.getHeight() < o2.getHeight()) return 1;
+            return 0;
+        }));
         System.out.println(Arrays.toString(a));
     }
 }
