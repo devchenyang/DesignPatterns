@@ -1,7 +1,7 @@
 package com.chenyang.dp.strategy;
 
 public class Sorter {
-    public void sort(Dog[] arr) {
+    public void sort(Comparable[] arr) {
         for (int i = 0; i < arr.length; i++) {
             int minPos = i;
             for (int j = i+1; j < arr.length; j++) {
@@ -11,8 +11,8 @@ public class Sorter {
         }
     }
 
-    private void swap(Dog[] arr, int i, int j) {
-        Dog temp = arr[i];
+    private void swap(Comparable[] arr, int i, int j) {
+        Comparable temp = arr[i];
         arr[i] = arr[j];
         arr[j] = temp;
     }

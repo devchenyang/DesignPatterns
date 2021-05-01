@@ -1,6 +1,6 @@
 package com.chenyang.dp.strategy;
 
-public class Cat {
+public class Cat implements Comparable {
     private int weight;
     private int height;
 
@@ -12,7 +12,9 @@ public class Cat {
         this.height = height;
     }
 
-    public int compareTo(Cat c) {
+    @Override
+    public int compareTo(Object o) {
+        Cat c = (Cat) o;
         if (this.weight > c.weight) return 1;
         if (this.weight < c.weight) return -1;
         return 0;
