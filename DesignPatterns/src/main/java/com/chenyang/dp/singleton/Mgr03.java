@@ -2,7 +2,7 @@ package com.chenyang.dp.singleton;
 
 /**
  * 单例模式：懒汉式加同步锁（synchronized关键字）
- * 用到的时候创建实例，避免了内存浪费，多线线程也安全了但效率降低，无法保证通过反射获取的也是同一个实例
+ * 用到的时候创建实例，避免了内存浪费，多线线程安全但效率降低，无法保证通过反射获取的也是同一个实例
  */
 public class Mgr03 {
     private static Mgr03 INSTANCE;
