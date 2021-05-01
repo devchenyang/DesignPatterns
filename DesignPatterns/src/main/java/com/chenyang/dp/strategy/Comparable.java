@@ -1,5 +1,5 @@
 package com.chenyang.dp.strategy;
 
-public interface Comparable {
-    int compareTo(Object o);
+public interface Comparable<T> {
+    int compareTo(T o);
 }
