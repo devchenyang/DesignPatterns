@@ -10,6 +10,14 @@ public class Dog implements Comparable<Dog> {
         this.food = food;
     }
 
+    public int getFood() {
+        return food;
+    }
+
+    public void setFood(int food) {
+        this.food = food;
+    }
+
     @Override
     public int compareTo(Dog d) {
         if (this.food > d.food) return 1;
