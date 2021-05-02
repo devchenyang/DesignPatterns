@@ -2,7 +2,7 @@ package com.chenyang.dp.simplefactory;
 
 public class VehicleFactory {
 
-    public static Vehicle createVehicle(String vehicleName) {
+    public Vehicle createVehicle(String vehicleName) {
         if (vehicleName == null) {
             return null;
         }
