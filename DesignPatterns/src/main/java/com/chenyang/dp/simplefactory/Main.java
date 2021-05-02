@@ -1,5 +1,8 @@
 package com.chenyang.dp.simplefactory;
 
+import com.chenyang.dp.simplefactory.factory.VehicleFactory;
+import com.chenyang.dp.simplefactory.interfaces.Vehicle;
+
 public class Main {
     public static void main(String[] args) {
 //        Car c = new Car();

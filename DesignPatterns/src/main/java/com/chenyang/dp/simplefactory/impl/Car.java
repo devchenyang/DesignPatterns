@@ -1,4 +1,6 @@
-package com.chenyang.dp.simplefactory;
+package com.chenyang.dp.simplefactory.impl;
+
+import com.chenyang.dp.simplefactory.interfaces.Vehicle;
 
 public class Car implements Vehicle {
     @Override
