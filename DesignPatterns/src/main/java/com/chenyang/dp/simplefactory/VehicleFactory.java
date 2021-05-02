@@ -2,13 +2,16 @@ package com.chenyang.dp.simplefactory;
 
 public class VehicleFactory {
 
-    public static Vehicle createCar() {
-        System.out.println("process before creating");
-        return new Car();
-    }
-
-    public static Vehicle createBroom() {
-        System.out.println("process before creating");
-        return new Broom();
+    public static Vehicle createVehicle(String vehicleName) {
+        if (vehicleName == null) {
+            return null;
+        }
+        if (vehicleName.equalsIgnoreCase("Car")) {
+            return new Car();
+        }
+        if (vehicleName.equalsIgnoreCase("Broom")) {
+            return new Broom();
+        }
+        return null;
     }
 }
