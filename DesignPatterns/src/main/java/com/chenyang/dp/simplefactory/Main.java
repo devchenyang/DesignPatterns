@@ -8,9 +8,10 @@ public class Main {
 //        Car c = new Car();
 //        c.go();
         VehicleFactory vehicleFactory = new VehicleFactory();
-        Vehicle broom = vehicleFactory.createVehicle("broom");
-        Vehicle car = vehicleFactory.createVehicle("car");
+        Vehicle broom = vehicleFactory.createBroom();
         broom.go();
+
+        Vehicle car = vehicleFactory.createCar();
         car.go();
     }
 }
