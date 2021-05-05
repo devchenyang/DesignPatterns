@@ -3,6 +3,10 @@ package com.chenyang.dp.observer.v3;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * 所有观察者实现Observer接口，分离观察者与被观察者
+ * 被观察者聚合所有观察者
+ */
 class Child {
     private boolean cry = false;
     List<Observer> observers = new ArrayList<>();
