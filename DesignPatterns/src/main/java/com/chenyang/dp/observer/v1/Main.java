@@ -1,4 +1,4 @@
-package com.chenyang.dp.observer;
+package com.chenyang.dp.observer.v1;
 
 class Child {
     private boolean cry = false;
