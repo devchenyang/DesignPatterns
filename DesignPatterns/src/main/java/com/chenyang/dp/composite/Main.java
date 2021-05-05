@@ -22,7 +22,6 @@ class BranchNode extends Node {
 
     @Override
     public void print() {
-        System.out.print("--");
         System.out.println(name);
     }
 }
@@ -60,14 +59,17 @@ public class Main {
         branch2.add(leaf4);
         branch2.add(leaf5);
 
-        print(root);
+        print(root, 0);
     }
 
-    public static void print(Node node) {
+    public static void print(Node node, int depth) {
+        for (int i = 0; i < depth; i++) {
+            System.out.print("--");
+        }
         node.print();
         if (node instanceof BranchNode) {
             for (Node node1 : ((BranchNode) node).nodes) {
-                print(node1);
+                print(node1, depth + 1);
             }
         }
     }
