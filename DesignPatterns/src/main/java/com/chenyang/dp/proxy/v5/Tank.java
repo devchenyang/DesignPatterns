@@ -22,6 +22,11 @@ public class Tank implements Movable {
 
     public static void main(String[] args) {
         Tank tank = new Tank();
+
+        // 把jdk动态生成的代理类保存到本地
+        System.getProperties().put("sun.misc.ProxyGenerator.saveGeneratedFiles", "true");
+//        Class<?> proxyClass = Proxy.getProxyClass(Movable.class.getClassLoader(), Movable.class);
+
         Movable m1 = (Movable) Proxy.newProxyInstance(Tank.class.getClassLoader(),
                 Tank.class.getInterfaces(),
                 new TankLogHandler(tank));
