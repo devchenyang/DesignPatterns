@@ -5,4 +5,9 @@ public class Cpu extends ComputerPart{
     double getPrice() {
         return 2000.99;
     }
+
+    @Override
+    void accept(Visitor v) {
+        v.visitCpu(this);
+    }
 }

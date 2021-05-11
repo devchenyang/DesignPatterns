@@ -5,4 +5,9 @@ public class Memory extends ComputerPart{
     double getPrice() {
         return 1000.99;
     }
+
+    @Override
+    void accept(Visitor v) {
+        v.visitMemory(this);
+    }
 }
