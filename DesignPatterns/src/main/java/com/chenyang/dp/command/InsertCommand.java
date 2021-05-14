@@ -4,6 +4,10 @@ public class InsertCommand extends Command {
     Content c;
     String strToInsert = "http://www.mashibing.com";
 
+    public InsertCommand(Content c) {
+        this.c = c;
+    }
+
     @Override
     public void doIt() {
         c.msg += strToInsert;

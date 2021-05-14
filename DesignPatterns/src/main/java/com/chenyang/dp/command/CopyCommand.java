@@ -3,6 +3,10 @@ package com.chenyang.dp.command;
 public class CopyCommand extends Command {
     Content c;
 
+    public CopyCommand(Content c) {
+        this.c = c;
+    }
+
     @Override
     public void doIt() {
         c.msg += c.msg;
