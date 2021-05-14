@@ -1,5 +1,0 @@
-package com.chenyang.dp.bridge.v2;
-
-public class MM {
-    String name;
-}
